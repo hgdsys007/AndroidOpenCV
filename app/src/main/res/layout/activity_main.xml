@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择图片1" />
+
+        <Button
+            android:id="@+id/btn_merge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="拼接图像" />
+
+        <TextView
+            android:id="@+id/showPath_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#000000">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+     <ProgressBar
+         android:visibility="invisible"
+         android:id="@+id/progress"
+         android:layout_gravity="center"
+         android:layout_width="50dp"
+         android:layout_height="50dp"/>
+</FrameLayout>
